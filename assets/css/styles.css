@@ -1,0 +1,117 @@
+:root{
+    /*Colors*/
+    --soft-gray:#e8eaea;
+    --soft-gray-opacity:#0000008f;
+    --main-pink:#900c3f;
+    --second-blue: #93B3E3;
+    --soft-blue: #F4FAFF;
+    --title-black: #191919;
+    --text-gray: #a1a0a0;
+    --white: #fafafa;
+    --transparent: rgba(38, 38, 38, 0);
+    --font-family-poppins: "Poppins", Arial, sans-serif;
+    --size-xxl: 5.5rem;
+    --size-xl: 4rem;
+    --size-big: 2.4rem;
+    --size-md: 2rem;
+    --size-sm: 1.6rem;
+    --size-xs: 1.2rem;
+    --box-shadow: -17px 0px 30px -15px #19191961;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-poppins);
+}
+html{
+    font-size: 62.5%;
+    font-family: var(--font-family-poppins);
+}
+html, body{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+    overflow-x: hidden;
+}
+main{
+    max-width: 4400px;
+    min-width: 320px;
+    margin: 0 auto; 
+    font-family: var(--font-family-poppins);
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.social-media svg{
+    color: var(--white);
+    border-radius: 8px;
+    padding: 10px;
+}
+.social-media svg:nth-child(1){
+    background-color: var(--second-blue);
+}
+.social-media svg:nth-child(2){
+    background-color: var(--text-gray);
+}
+.social-media svg:nth-child(3){
+    background-color: var(--main-pink);
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.nav-search{
+    display: flex;
+    align-items: center;
+}
+.nav-search input{
+    font-size: var(--size-md);
+    color:var(--title-black);
+}
+.nav-search input::placeholder{
+    font-size: var(--size-md);
+    color:var(--text-gray);
+}
+.nav-search span{
+    background-color: var(--second-blue);
+    color: var(--white);
+    padding: 10px 20px;
+}
+.nav-bar{
+    display: flex;
+    justify-content: center;
+}
+.nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: var(--size-big);
+    background-color: var(--soft-blue);
+    border: solid 1px #c6f6ff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 40px;
+}
+.nav-bar li{
+    list-style: none;
+}
+.nav-bar li a {
+    text-decoration: none;
+    color: var(--title-black);
+}
+.nav-bar li a:hover {
+    color: var(--main-pink);
+    text-decoration: underline;
+}
+.container{
+    margin: 0 auto;
+}
+.profile{
+    height: 200px;
+    background-color: var(--soft-blue);
+    border: solid 1px #c6f6ff;
+    border-radius: 10px;
+}
